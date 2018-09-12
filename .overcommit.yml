@@ -41,11 +41,6 @@ PreCommit:
     # report: report errors/warnings as-is regardless of line location (default)
     # warn: report errors as warnings if they are on lines you didn't modify
     problem_on_unmodified_line: warn
-  BashSyntax:
-    enabled: true
-    quiet: false
-    include: '**/*.sh'
-    required_executable: 'bash-syntax'
   BrokenSymlinks:
     enabled: true
   BundleAudit:
@@ -56,10 +51,6 @@ PreCommit:
     enabled: true
   CaseConflicts:
     enabled: true
-  CopyrightYear:
-    enabled: true
-    quiet: false
-    required_executable: 'copyright-year'
   CssLint:
     enabled: true
   Eslint:
@@ -149,7 +140,8 @@ PreCommit:
     exclude: '**/.mdl.rb'
   Safety:
     enabled: true
-    required_executable: 'safety.sh'
+    command: ['pipenv', 'check']
+    required_executable: 'pipenv'
   SemiStandard:
     enabled: true
   Standard:
@@ -162,10 +154,6 @@ PreCommit:
       - '--shell=bash'
   Sqlint:
     enabled: false
-  ToDos:
-    enabled: false
-    quiet: false
-    required_executable: 'check-todos'
   TrailingWhitespace:
     enabled: true
   TravisLint:
@@ -264,7 +252,3 @@ PreRebase:
     enabled: true
 
 PreReceive:
-  FreeSpace:
-    enabled: true
-    quiet: false
-    required_executable: 'check-freespace'
