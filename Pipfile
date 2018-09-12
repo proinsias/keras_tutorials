@@ -4,11 +4,18 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+"autopep8" = "*"
 "h5py" = "*"
-pydot = "*"
-plaidml-keras = "*"
-plaidbench = "*"
+ipyparallel = "*"
+jupyter = "*"
+jupyter-contrib-nbextensions = "*"
 keras = "*"
+numpy = "*"
+pandas = "*"
+plaidbench = "*"
+plaidml-keras = "*"
+pydot = "*"
+sklearn = "*"
 
 [dev-packages]
 
