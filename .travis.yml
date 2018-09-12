@@ -41,7 +41,7 @@ before_cache:
 before_install:
   - travis_retry rvm install 2.3.2 && rvm --default use 2.3.2
   - echo "before_install script"
-  - echo
+  - echo ""
   - echo "TRAVIS_BUILD_NUMBER: ${TRAVIS_BUILD_NUMBER}"
   - echo "TRAVIS_JOB_NUMBER: ${TRAVIS_JOB_NUMBER}"
   - echo "TRAVIS_OS_NAME: ${TRAVIS_OS_NAME}"
