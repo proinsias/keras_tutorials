@@ -1,9 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
-"""
-Multi-Class Classification Tutorial with the Keras Deep Learning Library.
-From https://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/.
-"""
+"""Multi-Class Classification Tutorial with the Keras Deep Learning Library."""
+# From https://machinelearningmastery.com/multi-class-classification-tutorial-keras-deep-learning-library/.
+from IPython import get_ipython
 from keras.models import Sequential
 from keras.layers import Dense
 from keras.wrappers.scikit_learn import KerasClassifier
@@ -13,7 +12,6 @@ import pandas as pd
 from sklearn.model_selection import cross_val_score
 from sklearn.model_selection import KFold
 from sklearn.preprocessing import LabelEncoder
-from sklearn.pipeline import Pipeline
 # fix random seed for reproducibility
 seed = 7
 np.random.seed(seed)
@@ -33,7 +31,7 @@ encoded_Y = encoder.transform(Y)
 dummy_y = np_utils.to_categorical(encoded_Y)
 # define baseline model
 def baseline_model():
-    # create model
+    """Create baseline model."""
     model = Sequential()
     model.add(Dense(8, input_dim=4, activation='relu'))
     model.add(Dense(3, activation='softmax'))
