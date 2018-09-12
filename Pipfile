@@ -5,6 +5,7 @@ name = "pypi"
 
 [packages]
 "autopep8" = "*"
+"flake8" = "*"
 "h5py" = "*"
 ipyparallel = "*"
 jupyter = "*"
@@ -14,9 +15,12 @@ numpy = "*"
 pandas = "*"
 plaidbench = "*"
 plaidml-keras = "*"
+pydocstyle = "*"
 pydot = "*"
-sklearn = "*"
 pytest = "*"
+sklearn = "*"
+yamllint = "*"
+pycodestyle = "==2.3"
 
 [dev-packages]
 

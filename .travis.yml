@@ -14,7 +14,7 @@ python:
 env:
   global:
     - PLAIDML_EXPERIMENTAL=1
-    - PLAIDML_DEVICE_IDS=opencl_cpu.0
+    - PLAIDML_DEVICE_IDS=llvm_cpu.0
 
 cache:
   apt: true
@@ -43,6 +43,7 @@ install:
   # - rvm --default use 2.3.2
   - ruby --version
   - gem update --system --no-document
+  - gem install bundler
   - gem --version
   - travis_retry bundle install
   - bundle --version
@@ -62,8 +63,6 @@ script:
   - overcommit --sign pre-commit
   # FIXME: Confirm below runs flake8, pycodestyle, pydocstyle etc.
   - overcommit --run
-  # Test plaidml installation.
-  - python plaidbench/plaidbench.py mobilenet
   # Run pytests.
   - python -m pytest
 
