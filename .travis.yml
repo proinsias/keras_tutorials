@@ -9,7 +9,7 @@ branches:
 language: python
 
 python:
-    - "3.6"
+  - "3.6"
 
 env:
   global:
@@ -27,7 +27,7 @@ cache:
     - "${HOME}/.ccache"
     - "${HOME}/.pip-cache"
     - "${VIRTUAL_ENV}"
-    - node_modules # NPM packages
+    - node_modules  # NPM packages
 
 before_cache:
   - rm --force "${HOME}/.cache/pip/log/debug.log"
