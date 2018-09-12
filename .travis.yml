@@ -1,0 +1,115 @@
+---
+
+sudo: false  # Use container-based infrastructure
+
+branches:
+  only:
+    - master
+
+language: python
+
+python:
+    - "3.6"
+
+env:
+  - PLAIDML_EXPERIMENTAL=1
+  - PLAIDML_DEVICE_IDS=opencl_cpu.0
+
+addons:
+  apt:
+    sources:
+      - debian-sid    # Grab shellcheck from the Debian repo (o_O)
+    packages:
+      - shellcheck
+
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+    - os: osx
+
+cache:
+  apt: true
+  bundler: true
+  ccache: true
+  custom_install: true  # Since we override the default install command.
+  pip: true
+  directories:
+    - "${HOME}/.cache/pip"
+    - "${HOME}/.ccache"
+    - "${HOME}/.pip-cache"
+    - "${VIRTUAL_ENV}"
+    - node_modules # NPM packages
+
+before_cache:
+  - rm --force "${HOME}/.cache/pip/log/debug.log"
+
+before_install:
+  - travis_retry rvm install 2.3.2 && rvm --default use 2.3.2
+  - echo "before_install script"
+  - echo
+  - echo "TRAVIS_BUILD_NUMBER: ${TRAVIS_BUILD_NUMBER}"
+  - echo "TRAVIS_JOB_NUMBER: ${TRAVIS_JOB_NUMBER}"
+  - echo "TRAVIS_OS_NAME: ${TRAVIS_OS_NAME}"
+  - echo "TRAVIS_BRANCH: ${TRAVIS_BRANCH}"
+  - echo "TRAVIS_COMMIT: ${TRAVIS_COMMIT}"
+  - echo "TRAVIS_COMMIT_MESSAGE: ${TRAVIS_COMMIT_MESSAGE}"
+  - echo "TRAVIS_COMMIT_RANGE: ${TRAVIS_COMMIT_RANGE}"
+  - echo "TRAVIS_PULL_REQUEST: ${TRAVIS_PULL_REQUEST}"
+  - echo "TRAVIS_PULL_REQUEST_BRANCH: ${TRAVIS_PULL_REQUEST_BRANCH}"
+  - echo "TRAVIS_EVENT_TYPE: ${TRAVIS_EVENT_TYPE}"
+  - echo "TRAVIS_PYTHON_VERSION: ${TRAVIS_PYTHON_VERSION:-unset}"
+  - echo "VIRTUAL_ENV: ${VIRTUAL_ENV:-unset}"
+  - echo "date: $(date --iso-8601=seconds)"
+  - echo "pwd: $(pwd)"
+  - echo "uname: $(uname --all)"
+  - git --version
+  - echo "git tag: $(git describe --always)"
+  - git config --global user.email "travis@travis.ci"  # overcommit Author
+  - git config --global user.name "Travis CI"  # overcommit Author
+  - git config --global hooks.copyrightholder "Francis T. O'Donovan"
+  - echo "python version: $(python --version)"
+  - shellcheck --version
+  - ruby --version
+  - gem update --system --no-document
+  - gem --version
+  - npm --version
+  - echo "disk usage:"
+  - df --human-readable
+
+install:
+  - rvm --default use 2.3.2
+  - ruby --version
+  - travis_retry bundle install
+  - bundle --version
+  - bundle-audit --version
+  - mdl --version
+  - overcommit --version
+  - reek --version
+  - rubocop --version
+  - ruby-lint --version
+  - travis version --skip-completion-check
+  - npm --version
+  - python --version
+  - pypthon -m pip install pipenv
+  - pipenv install --deploy
+  - pipenv install --system
+
+script:
+  - ruby --version
+  - overcommit --sign
+  - overcommit --sign pre-commit
+  # FIXME: Confirm below runs flake8, pycodestyle, pydocstyle etc.
+  - overcommit --run
+  # Test plaidml installation.
+  - python plaidbench/plaidbench.py mobilenet
+  # Run pytests.
+  - python -m pytest
+
+# after_success:
+#   -
+
+notifications:
+  slack:
+    # yamllint disable-line rule:line-length
+    secure: PDtcvz//in9jj9g96rjAePhb59NizHGxrPZpmVXvYLNuYh2iN4i9GgBruLoySS5pg4cALgs69quof9c6lF8U75w0FfcOxfANb+6Y5Joh/uvR7IhPe9rZjadsXG4kNlSwfTcxMOc9mTHmyKi50WcnwWGVjPAU8uKnlUPxV3K3kjeuKD6QDOJuCtKgTKyeW92VvtMAKILBD+UOrkdr72eCwtQ+cReQ2JNgYndRgjcs6TxDRAq2OISrHSyX7/ISfqvHcOCnH8jazSFYbYcTZ7Sk9CnDGt+FDz+e8hNysI5T8sFGge6eiwyJQ7ivqdvbWYKS0AFeJA8BQwbrA7gt6jLaM5v5WLY7npVMAhkwtM2s6/Z2p1IsEqhaigoLINfyBw6MCbIDeZg1OJdocuWRNE+pfZgVXzC2XXcnbg+u5ChaqgqoKqN3/Y+W0IGZ4AXXWcT1XHVgB414j4TZ+t/bIlKMbcdD4n9tvmV9+zm+bZ8keFkWlMSac4bW7wX9gOQG4FMUGolznTinwlAwpCpjP22gM7M6BoDwg2URWE5qcXoJYERHdsvaOAOTlj3RnnBjsVZwbIfk2gbWmE0aKwk8l21PBhjiBsZvHPyBR6EeAUi8bktQUfdAImk53h0GYPeSJ6ocu8fas8NgBuZf5Ysc0RxQYnQUkqZZBO53BOScDr87tHE=
