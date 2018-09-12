@@ -52,8 +52,7 @@ install:
   - overcommit --version
   - python -m pip install pipenv
   - pipenv --version
-  - pipenv install --deploy
-  - pipenv install --system
+  - pipenv install --deploy --system
 
 script:
   # FIXME: Need?
