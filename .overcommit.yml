@@ -112,9 +112,6 @@ PreCommit:
       - '--ignore=E302,E305'
       - '--max-line-length=120'
       - '--show-source'
-    exclude:
-      - 'jupyter/jupyter_notebook_config.py'
-      - 'setup.py'
   Pydocstyle:
     enabled: true
     flags:
@@ -131,9 +128,6 @@ PreCommit:
       - '--msg-template="{path}:{line}:{C}: {msg} ({symbol})"'
       - '--reports=n'
       - '--persistent=n'
-    exclude:
-      - 'jupyter/jupyter_notebook_config.py'
-      - 'setup.py'
   PythonFlake8:
     enabled: true
     flags:
@@ -144,18 +138,15 @@ PreCommit:
       - '--max-line-length=120'
       - '--select=E10,E11,E9,F4,F6,F7,F8'
       - '--show-source'
-    exclude:
-      - 'jupyter/jupyter_notebook_config.py'
-      - 'setup.py'
   Reek:
-    enabled: true
+    enabled: false
   RstLint:
     enabled: true
   RuboCop:
-    enabled: true
+    enabled: false
   RubyLint:
-    enabled: true
-    exclude: '**/mdl.rb'
+    enabled: false
+    exclude: '**/.mdl.rb'
   Safety:
     enabled: true
     required_executable: 'safety.sh'
