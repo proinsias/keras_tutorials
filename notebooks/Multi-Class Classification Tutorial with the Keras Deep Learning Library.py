@@ -29,6 +29,8 @@ _ = encoder.fit(Y)
 encoded_Y = encoder.transform(Y)
 # convert integers to dummy variables (i.e. one hot encoded)
 dummy_y = np_utils.to_categorical(encoded_Y)
+encoded_Y
+dummy_y[0]
 # define baseline model
 def baseline_model():
     """Create baseline model."""

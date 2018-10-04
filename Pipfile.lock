@@ -1,11 +1,11 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "90876faca00f6c557a24eb307b6364dfd4c4345319bd075acf5736894040e1b4"
+            "sha256": "1415b895a706b69fb4755d3cdd8941eb5e1bf98a816d0f4172a53c024dd7f8d8"
         },
         "pipfile-spec": 6,
         "requires": {
-            "python_version": "3.6"
+            "python_version": "3.7"
         },
         "sources": [
             {
@@ -507,7 +507,6 @@
                 "sha256:d79d9c42cf769eb61d5cb7857f39c23bdf8ca135a344510762cbcd529d9fa56d",
                 "sha256:faa66dfa4e170df2ed091fca2a86d60637c2727a135b56b361b4494899f1109a"
             ],
-            "markers": "python_version >= '2.6' and python_version != '3.3.*' and python_version < '4' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'",
             "version": "==0.3.5"
         },
         "plaidml-keras": {
