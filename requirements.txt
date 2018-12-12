@@ -35,7 +35,7 @@ jupyter-nbextensions-configurator==0.4.0
 jupyter==1.0.0
 keras-applications==1.0.4
 keras-preprocessing==1.0.2
-keras==2.2.2
+keras==2.2.4
 lxml==4.2.5
 markupsafe==1.0
 mccabe==0.6.1
