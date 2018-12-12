@@ -15,7 +15,7 @@ enum34==1.1.6
 flake8==3.5.0
 h5py==2.8.0
 html5lib==1.0.1
-idna==2.6
+idna==2.8
 ipykernel==4.9.0
 ipyparallel==6.2.2
 ipython-genutils==0.2.0
