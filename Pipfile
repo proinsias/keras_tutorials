@@ -20,7 +20,7 @@ pydot = "*"
 pytest = "*"
 sklearn = "*"
 yamllint = "*"
-pycodestyle = "==2.3"
+pycodestyle = "*"
 
 [dev-packages]
 

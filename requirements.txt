@@ -1,90 +1,94 @@
 -i https://pypi.org/simple
 appnope==0.1.0 ; sys_platform == 'darwin'
-atomicwrites==1.2.1 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
+atomicwrites==1.2.1
 attrs==18.2.0
-autopep8==1.4
-backcall==0.1.0
-bleach==2.1.4
-certifi==2018.8.24
+autopep8==1.4.3
+backports.shutil-get-terminal-size==1.0.0 ; python_version == '2.7'
+bleach==3.0.2
+certifi==2018.11.29
 chardet==3.0.4
-click==6.7
+click==7.0
+configparser==3.5.0 ; python_version < '3.2'
 decorator==4.3.0
 defusedxml==0.5.0
-entrypoints==0.2.3 ; python_version >= '2.7'
-enum34==1.1.6
-flake8==3.5.0
+entrypoints==0.2.3
+enum34==1.1.6 ; python_version < '3.4'
+flake8==3.6.0
+funcsigs==1.0.2 ; python_version < '3.0'
+functools32==3.2.3.post2 ; python_version == '2.7'
+futures==3.2.0 ; python_version == '2.7'
 h5py==2.8.0
-html5lib==1.0.1
 idna==2.6
-ipykernel==4.9.0
-ipyparallel==6.2.2
+ipaddress==1.0.22 ; python_version == '2.7'
+ipykernel==4.10.0
+ipyparallel==6.2.3
 ipython-genutils==0.2.0
-ipython==6.5.0 ; python_version >= '3.3'
-ipywidgets==7.4.1
-jedi==0.12.1
+ipython==5.8.0 ; python_version < '3.3'
+ipywidgets==7.4.2
 jinja2==2.10
 jsonschema==2.6.0
-jupyter-client==5.2.3
+jupyter-client==5.2.4
 jupyter-console==5.2.0
 jupyter-contrib-core==0.3.3
 jupyter-contrib-nbextensions==0.5.0
 jupyter-core==4.4.0
 jupyter-highlight-selected-word==0.2.0
-jupyter-latex-envs==1.4.4
+jupyter-latex-envs==1.4.6
 jupyter-nbextensions-configurator==0.4.0
 jupyter==1.0.0
 keras-applications==1.0.4
 keras-preprocessing==1.0.2
 keras==2.2.2
 lxml==4.2.5
-markupsafe==1.0
+markupsafe==1.1.0
 mccabe==0.6.1
-mistune==0.8.3
+mistune==0.8.4
 more-itertools==4.3.0
 nbconvert==5.4.0
 nbformat==4.4.0
-notebook==5.6.0
-numpy==1.15.1
+notebook==5.7.2
+numpy==1.15.4
 pandas==0.23.4
 pandocfilters==1.4.2
-parso==0.3.1
-pathspec==0.5.7
+pathlib2==2.3.3 ; python_version in '2.6 2.7 3.2 3.3'
+pathspec==0.5.9
 pexpect==4.6.0 ; sys_platform != 'win32'
-pickleshare==0.7.4
+pickleshare==0.7.5
 plaidbench==0.3.5
 plaidml-keras==0.3.5
 plaidml==0.3.5
-pluggy==0.7.1 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
-prometheus-client==0.3.1
+pluggy==0.8.0
+prometheus-client==0.5.0
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0 ; os_name != 'nt'
-py==1.6.0 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
-pycodestyle==2.3.0
-pydocstyle==2.1.1
-pydot==1.2.4
-pyflakes==1.6.0
-pygments==2.2.0
-pyparsing==2.2.0
-pytest==3.8.0
-python-dateutil==2.7.3
-pytz==2018.5
+py==1.7.0
+pycodestyle==2.4.0
+pydocstyle==3.0.0
+pydot==1.4.0
+pyflakes==2.0.0
+pygments==2.3.0
+pyparsing==2.3.0
+pytest==4.0.1
+python-dateutil==2.7.5
+pytz==2018.7
 pyyaml==3.13
-pyzmq==17.1.2 ; python_version >= '2.7' and python_version != '3.0*' and python_version != '3.1*' and python_version != '3.2*'
-qtconsole==4.4.1
+pyzmq==17.1.2
+qtconsole==4.4.3
 requests==2.18.4
-scikit-learn==0.19.2
-scipy==1.1.0 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
+scandir==1.9.0 ; python_version < '3.5'
+scikit-learn==0.20.1
+scipy==1.1.0
 send2trash==1.5.0
 simplegeneric==0.8.1
-six==1.11.0
+six==1.12.0
 sklearn==0.0
 snowballstemmer==1.2.1
-terminado==0.8.1 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
-testpath==0.3.1
-tornado==5.1 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
+terminado==0.8.1
+testpath==0.4.2
+tornado==5.1.1
 traitlets==4.3.2
 urllib3==1.22
 wcwidth==0.1.7
 webencodings==0.5.1
-widgetsnbextension==3.4.1
-yamllint==1.11.1
+widgetsnbextension==3.4.2
+yamllint==1.13.0
