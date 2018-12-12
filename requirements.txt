@@ -4,7 +4,7 @@ atomicwrites==1.2.1 ; python_version >= '2.7' and python_version != '3.3.*' and 
 attrs==18.2.0
 autopep8==1.4
 backcall==0.1.0
-bleach==2.1.4
+bleach==3.0.2
 certifi==2018.8.24
 chardet==3.0.4
 click==6.7
