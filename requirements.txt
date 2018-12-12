@@ -54,7 +54,7 @@ pickleshare==0.7.4
 plaidbench==0.3.5
 plaidml-keras==0.3.5
 plaidml==0.3.5
-pluggy==0.7.1 ; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
+pluggy==0.8.0; python_version >= '2.7' and python_version != '3.3.*' and python_version != '3.0.*' and python_version != '3.2.*' and python_version != '3.1.*'
 prometheus-client==0.3.1
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0 ; os_name != 'nt'
