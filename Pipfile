@@ -13,7 +13,7 @@ jupyter-contrib-nbextensions = "*"
 keras = "*"
 numpy = "*"
 pandas = "*"
-plaidbench = "*"
+# plaidbench = "*"  # To avoid vulnerability CVE-2018-18074.
 plaidml-keras = "*"
 pydocstyle = "*"
 pydot = "*"
@@ -21,6 +21,8 @@ pytest = "*"
 sklearn = "*"
 yamllint = "*"
 pycodestyle = "*"
+urllib3 = ">=1.23"  # To avoid vulnerability CVE-2018-20060.
+requests = ">=2.20.0"  # To avoid vulnerability CVE-2018-18074.
 
 [dev-packages]
 
