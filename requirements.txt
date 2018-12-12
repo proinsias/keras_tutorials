@@ -33,7 +33,7 @@ jupyter-highlight-selected-word==0.2.0
 jupyter-latex-envs==1.4.4
 jupyter-nbextensions-configurator==0.4.0
 jupyter==1.0.0
-keras-applications==1.0.4
+keras-applications==1.0.6
 keras-preprocessing==1.0.2
 keras==2.2.2
 lxml==4.2.5
