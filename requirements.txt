@@ -63,7 +63,7 @@ pycodestyle==2.3.0
 pydocstyle==2.1.1
 pydot==1.2.4
 pyflakes==1.6.0
-pygments==2.2.0
+pygments==2.3.0
 pyparsing==2.2.0
 pytest==3.8.0
 python-dateutil==2.7.3
