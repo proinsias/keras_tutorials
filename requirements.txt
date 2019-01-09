@@ -55,7 +55,7 @@ pexpect==4.6.0 ; sys_platform != 'win32'
 pickleshare==0.7.5
 plaidml-keras==0.3.5
 plaidml==0.3.5
-pluggy==0.8.0
+pluggy==0.8.1
 prometheus-client==0.5.0
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0 ; os_name != 'nt'
