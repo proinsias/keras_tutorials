@@ -4,22 +4,22 @@ atomicwrites==1.2.1
 attrs==18.2.0
 autopep8==1.4.3
 backports.shutil-get-terminal-size==1.0.0 ; python_version == '2.7'
-bleach==3.0.2
+bleach==3.1.0
 certifi==2018.11.29
 chardet==3.0.4
 configparser==3.5.0 ; python_version == '2.7'
 decorator==4.3.0
 defusedxml==0.5.0
-entrypoints==0.2.3
+entrypoints==0.3
 enum34==1.1.6 ; python_version == '2.7'
 flake8==3.6.0
 funcsigs==1.0.2 ; python_version < '3.0'
 functools32==3.2.3.post2 ; python_version == '2.7'
 futures==3.2.0 ; python_version == '2.7'
-h5py==2.8.0
+h5py==2.9.0
 idna==2.8
 ipaddress==1.0.22 ; python_version == '2.7'
-ipykernel==4.10.0
+ipykernel==5.1.0
 ipyparallel==6.2.3
 ipython-genutils==0.2.0
 ipython==5.8.0 ; python_version < '3.3'
@@ -29,7 +29,7 @@ jsonschema==2.6.0
 jupyter-client==5.2.4
 jupyter-console==5.2.0
 jupyter-contrib-core==0.3.3
-jupyter-contrib-nbextensions==0.5.0
+jupyter-contrib-nbextensions==0.5.1
 jupyter-core==4.4.0
 jupyter-highlight-selected-word==0.2.0
 jupyter-latex-envs==1.4.6
@@ -38,7 +38,7 @@ jupyter==1.0.0
 keras-applications==1.0.4
 keras-preprocessing==1.0.2
 keras==2.2.2
-lxml==4.2.5
+lxml==4.3.0
 markupsafe==1.1.0
 mccabe==0.6.1
 mistune==0.8.4
@@ -55,18 +55,18 @@ pexpect==4.6.0 ; sys_platform != 'win32'
 pickleshare==0.7.5
 plaidml-keras==0.3.5
 plaidml==0.3.5
-pluggy==0.8.0
+pluggy==0.8.1
 prometheus-client==0.5.0
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0 ; os_name != 'nt'
 py==1.7.0
 pycodestyle==2.4.0
 pydocstyle==3.0.0
-pydot==1.4.0
+pydot==1.4.1
 pyflakes==2.0.0
 pygments==2.3.0
 pyparsing==2.3.0
-pytest==4.0.1
+pytest==4.1.1
 python-dateutil==2.7.5
 pytz==2018.7
 pyyaml==3.13
@@ -75,7 +75,7 @@ qtconsole==4.4.3
 requests==2.21.0
 scandir==1.9.0 ; python_version < '3.5'
 scikit-learn==0.20.2
-scipy==1.1.0
+scipy==1.2.0
 send2trash==1.5.0
 simplegeneric==0.8.1
 six==1.12.0
