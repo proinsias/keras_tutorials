@@ -60,7 +60,7 @@ prometheus-client==0.5.0
 prompt-toolkit==1.0.15
 ptyprocess==0.6.0 ; os_name != 'nt'
 py==1.7.0
-pycodestyle==2.4.0
+pycodestyle==2.5.0
 pydocstyle==3.0.0
 pydot==1.4.1
 pyflakes==2.0.0
