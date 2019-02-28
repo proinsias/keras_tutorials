@@ -38,7 +38,7 @@ jupyter==1.0.0
 keras-applications==1.0.4
 keras-preprocessing==1.0.2
 keras==2.2.2
-lxml==4.3.0
+lxml==4.3.2
 markupsafe==1.1.0
 mccabe==0.6.1
 mistune==0.8.4
