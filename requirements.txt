@@ -7,12 +7,12 @@ backports.shutil-get-terminal-size==1.0.0 ; python_version == '2.7'
 bleach==3.1.0
 certifi==2018.11.29
 chardet==3.0.4
-configparser==3.5.0 ; python_version == '2.7'
+configparser==3.7.3; python_version == '2.7'
 decorator==4.3.0
 defusedxml==0.5.0
 entrypoints==0.3
 enum34==1.1.6 ; python_version == '2.7'
-flake8==3.6.0
+flake8==3.7.6
 funcsigs==1.0.2 ; python_version < '3.0'
 functools32==3.2.3.post2 ; python_version == '2.7'
 futures==3.2.0 ; python_version == '2.7'
@@ -22,10 +22,10 @@ ipaddress==1.0.22 ; python_version == '2.7'
 ipykernel==5.1.0
 ipyparallel==6.2.3
 ipython-genutils==0.2.0
-ipython==7.2.0; python_version < '3.3'
+ipython==7.3.0; python_version < '3.3'
 ipywidgets==7.4.2
 jinja2==2.10
-jsonschema==2.6.0
+jsonschema==3.0.1
 jupyter-client==5.2.4
 jupyter-console==5.2.0
 jupyter-contrib-core==0.3.3
@@ -38,15 +38,15 @@ jupyter==1.0.0
 keras-applications==1.0.4
 keras-preprocessing==1.0.2
 keras==2.2.2
-lxml==4.3.0
-markupsafe==1.1.0
+lxml==4.3.2
+markupsafe==1.1.1
 mccabe==0.6.1
 mistune==0.8.4
-more-itertools==5.0.0
+more-itertools==6.0.0
 nbconvert==5.4.1
 nbformat==4.4.0
 notebook==5.7.4
-numpy==1.15.4
+numpy==1.16.2
 pandas==0.23.4
 pandocfilters==1.4.2
 pathlib2==2.3.3 ; python_version < '3.6'
@@ -55,26 +55,26 @@ pexpect==4.6.0 ; sys_platform != 'win32'
 pickleshare==0.7.5
 plaidml-keras==0.3.5
 plaidml==0.3.5
-pluggy==0.8.1
-prometheus-client==0.5.0
-prompt-toolkit==1.0.15
+pluggy==0.9.0
+prometheus-client==0.6.0
+prompt-toolkit==2.0.9
 ptyprocess==0.6.0 ; os_name != 'nt'
-py==1.7.0
+py==1.8.0
 pycodestyle==2.4.0
 pydocstyle==3.0.0
 pydot==1.4.1
-pyflakes==2.0.0
+pyflakes==2.1.1
 pygments==2.3.1
 pyparsing==2.3.0
-pytest==4.1.1
+pytest==4.3.0
 python-dateutil==2.7.5
 pytz==2018.9
 pyyaml==3.13
-pyzmq==17.1.2
+pyzmq==18.0.0
 qtconsole==4.4.3
 requests==2.21.0
 scandir==1.9.0 ; python_version < '3.5'
-scikit-learn==0.20.2
+scikit-learn==0.20.3
 scipy==1.2.0
 send2trash==1.5.0
 simplegeneric==0.8.1
@@ -83,10 +83,10 @@ sklearn==0.0
 snowballstemmer==1.2.1
 terminado==0.8.1
 testpath==0.4.2
-tornado==5.1.1
+tornado==6.0
 traitlets==4.3.2
 urllib3==1.24.1
 wcwidth==0.1.7
 webencodings==0.5.1
 widgetsnbextension==3.4.2
-yamllint==1.13.0
+yamllint==1.15.0
