@@ -46,7 +46,7 @@ more-itertools==6.0.0
 nbconvert==5.4.1
 nbformat==4.4.0
 notebook==5.7.5
-pandas==0.24.1
+pandas==0.24.2
 pandocfilters==1.4.2
 pathlib2==2.3.3 ; python_version < '3.6'
 pathspec==0.5.9
