@@ -72,7 +72,7 @@ pyyaml==5.1
 pyzmq==18.0.1
 qtconsole==4.4.3
 requests==2.21.0
-scandir==1.9.0 ; python_version < '3.5'
+scandir==1.10.0; python_version < '3.5'
 scikit-learn==0.20.3
 scipy==1.2.1
 send2trash==1.5.0
