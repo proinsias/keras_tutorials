@@ -20,7 +20,7 @@ h5py==2.9.0
 idna==2.8
 ipaddress==1.0.22 ; python_version == '2.7'
 ipykernel==5.1.0
-ipyparallel==6.2.3
+ipyparallel==6.2.4
 ipython-genutils==0.2.0
 ipython==7.5.0; python_version < '3.3'
 ipywidgets==7.4.2
