@@ -65,7 +65,7 @@ pydot==1.4.1
 pyflakes==2.1.1
 pygments==2.4.0
 pyparsing==2.4.0
-pytest==4.5.0
+pytest==4.6.0
 python-dateutil==2.8.0
 pytz==2019.1
 pyyaml==5.1
