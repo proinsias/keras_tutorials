@@ -48,7 +48,7 @@ nbformat==4.4.0
 notebook==5.7.8
 pandas==0.24.2
 pandocfilters==1.4.2
-pathlib2==2.3.3 ; python_version < '3.6'
+pathlib2==2.3.4; python_version < '3.6'
 pathspec==0.5.9
 pexpect==4.7.0; sys_platform != 'win32'
 pickleshare==0.7.5
