@@ -87,5 +87,5 @@ traitlets==4.3.2
 urllib3==1.25.2
 wcwidth==0.1.7
 webencodings==0.5.1
-widgetsnbextension==3.4.2
+widgetsnbextension==3.5.0
 yamllint==1.15.0
