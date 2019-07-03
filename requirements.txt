@@ -23,7 +23,7 @@ ipykernel==5.1.0
 ipyparallel==6.2.4
 ipython-genutils==0.2.0
 ipython==7.5.0; python_version < '3.3'
-ipywidgets==7.4.2
+ipywidgets==7.5.0
 jinja2==2.10.1
 jsonschema==3.0.1
 jupyter-client==5.2.4
