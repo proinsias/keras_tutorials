@@ -60,7 +60,7 @@ prompt-toolkit==2.0.9
 ptyprocess==0.6.0 ; os_name != 'nt'
 py==1.8.0
 pycodestyle==2.5.0
-pydocstyle==3.0.0
+pydocstyle==4.0.0
 pydot==1.4.1
 pyflakes==2.1.1
 pygments==2.4.0
