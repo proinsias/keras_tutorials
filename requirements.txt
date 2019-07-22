@@ -26,7 +26,7 @@ ipython==7.5.0; python_version < '3.3'
 ipywidgets==7.4.2
 jinja2==2.10.1
 jsonschema==3.0.1
-jupyter-client==5.2.4
+jupyter-client==5.3.1
 jupyter-console==5.2.0
 jupyter-contrib-core==0.3.3
 jupyter-contrib-nbextensions==0.5.1
