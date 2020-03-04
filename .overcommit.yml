@@ -98,7 +98,7 @@ PreCommit:
     enabled: true
   Pycodestyle:
     on_fail: 'warn'
-    enabled: true
+    enabled: false
     flags:
       - '--ignore=E302,E305'
       - '--max-line-length=120'
@@ -140,8 +140,6 @@ PreCommit:
     exclude: '**/.mdl.rb'
   Safety:
     enabled: true
-    command: ['pipenv', 'check']
-    required_executable: 'pipenv'
   SemiStandard:
     enabled: true
   Standard:
@@ -155,7 +153,7 @@ PreCommit:
   Sqlint:
     enabled: false
   TrailingWhitespace:
-    enabled: true
+    enabled: false
   TravisLint:
     enabled: true
   W3cCss:
