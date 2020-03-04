@@ -1,0 +1,20 @@
+autopep8
+flake8
+h5py
+ipyparallel
+ipython
+jupyter
+jupyter-contrib-nbextensions
+keras
+numpy
+pandas
+plaidml-keras
+pycodestyle
+pydocstyle
+pydot
+pyyaml>=4.2b1  # To avoid vulnerability CVE-2017-18342.
+pytest
+requests>=2.20.0  # To avoid vulnerability CVE-2018-18074.
+sklearn
+urllib3>=1.23  # To avoid vulnerability CVE-2018-20060.
+yamllint

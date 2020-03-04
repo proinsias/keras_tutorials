@@ -11,6 +11,9 @@ language: python
 python:
   - "3.7"
 
+rvm:
+  - 2.7
+
 env:
   global:
     - PLAIDML_EXPERIMENTAL=1
@@ -33,14 +36,11 @@ before_cache:
   - rm --force "${HOME}/.cache/pip/log/debug.log"
 
 before_install:
-  - travis_retry rvm install 2.3.2 && rvm --default use 2.3.2
   - git --version
   - npm --version
   - ruby --version
 
 install:
-  # FIXME: Need?
-  # - rvm --default use 2.3.2
   - ruby --version
   - gem update --system --no-document
   - gem install bundler
@@ -50,13 +50,9 @@ install:
   - bundle-audit --version
   - mdl --version
   - overcommit --version
-  - python -m pip install pipenv
-  - pipenv --version
-  - pipenv install --deploy --system
+  - python3 -m pip install --requirement requirements.txt
 
 script:
-  # FIXME: Need?
-  # - rvm --default use 2.3.2
   - ruby --version
   - overcommit --sign
   - overcommit --sign pre-commit
