@@ -50,13 +50,12 @@ install:
   - bundle-audit --version
   - mdl --version
   - overcommit --version
-  - python3 -m pip install --requirement requirements.txt
+  - python3 -m pip install --user --requirement requirements.txt
 
 script:
   - ruby --version
   - overcommit --sign
   - overcommit --sign pre-commit
-  # FIXME: Confirm below runs flake8, pycodestyle, pydocstyle etc.
   - overcommit --run
   # Run pytests.
   - python -m pytest
