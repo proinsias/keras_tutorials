@@ -50,7 +50,8 @@ install:
   - bundle-audit --version
   - mdl --version
   - overcommit --version
-  - python3 -m pip install --user --requirement requirements.txt
+  - for n in {1..3}; do pip uninstall --yes numpy; done
+  - pip install --requirement requirements.txt
 
 script:
   - ruby --version
