@@ -6,6 +6,7 @@ ipython
 jupyter
 jupyter-contrib-nbextensions
 keras
+notebook>=6.1.5  # CVE-2020-26215
 numpy
 pandas
 plaidml-keras
