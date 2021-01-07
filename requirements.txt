@@ -4,7 +4,6 @@
 #
 #    ./bin/update-requirements.sh
 #
-appnope==0.1.0            # via ipykernel, ipython
 argon2-cffi==20.1.0       # via notebook
 async-generator==1.10     # via nbclient
 attrs==20.3.0             # via jsonschema, pytest
@@ -44,7 +43,7 @@ jupyterlab-pygments==0.1.2  # via nbconvert
 keras-applications==1.0.8  # via keras
 keras-preprocessing==1.1.2  # via keras
 keras==2.2.4              # via -r requirements.in, plaidml-keras
-lxml==4.6.1               # via jupyter-contrib-nbextensions
+lxml==4.6.2               # via jupyter-contrib-nbextensions
 markupsafe==1.1.1         # via jinja2
 mccabe==0.6.1             # via flake8
 mistune==0.8.4            # via nbconvert
