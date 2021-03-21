@@ -322,7 +322,7 @@ traitlets==5.0.5
     #   nbformat
     #   notebook
     #   qtconsole
-urllib3==1.26.2
+urllib3==1.26.3
     # via
     #   -r requirements.in
     #   requests
