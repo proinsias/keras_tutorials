@@ -117,7 +117,6 @@ repos:
     hooks:
       - id: forbid-binary
       - id: git-check  # Configure in .gitattributes
-      - id: require-ascii
       - id: script-must-have-extension
       - id: script-must-not-have-extension
       - id: shellcheck
