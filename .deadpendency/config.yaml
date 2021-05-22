@@ -12,6 +12,7 @@ ignore-failures:
         - jupyter-highlight-selected-word
         - jupyter-latex-envs
         - jupyter-nbextensions-configurator
+        - keras-applications
         - markupsafe
         - mccabe
         - mistune
