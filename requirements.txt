@@ -4,10 +4,6 @@
 #
 #    ./bin/update-requirements
 #
-appnope==0.1.2
-    # via
-    #   ipykernel
-    #   ipython
 argon2-cffi==20.1.0
     # via notebook
 async-generator==1.10
@@ -327,7 +323,7 @@ traitlets==5.0.5
     #   nbformat
     #   notebook
     #   qtconsole
-urllib3==1.26.4
+urllib3==1.26.5
     # via
     #   -r requirements.in
     #   requests
