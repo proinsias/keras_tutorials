@@ -6,14 +6,13 @@ GEM
       i18n (>= 0.7, < 2)
       minitest (~> 5.1)
       tzinfo (~> 1.1)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
     bundler-audit (0.8.0)
       bundler (>= 1.2.0, < 3)
       thor (~> 1.0)
     chef-utils (17.0.242)
       concurrent-ruby
-    childprocess (4.0.0)
     concurrent-ruby (1.1.8)
     faraday (1.4.1)
       faraday-excon (~> 1.1)
@@ -37,7 +36,6 @@ GEM
     highline (2.0.3)
     i18n (1.8.10)
       concurrent-ruby (~> 1.0)
-    iniparse (1.5.0)
     json (2.5.1)
     json_pure (2.5.1)
     kramdown (2.3.1)
@@ -62,10 +60,6 @@ GEM
     multipart-post (2.1.1)
     net-http-persistent (2.9.4)
     net-http-pipeline (1.0.1)
-    overcommit (0.58.0)
-      childprocess (>= 0.6.3, < 5)
-      iniparse (~> 1.4)
-      rexml (~> 3.2)
     public_suffix (4.0.6)
     pusher-client (0.6.2)
       json
@@ -94,7 +88,6 @@ DEPENDENCIES
   bundler
   bundler-audit
   mdl
-  overcommit
   travis
 
 BUNDLED WITH
